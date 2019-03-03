@@ -3,10 +3,10 @@ def my_select(collection) #{ |element| element.even?}
    b = 0
    new_collection = []#No empty array to shovel transformed data into as #select returns new data-visibility
    while b < collection.length
-     new_collection << yield(collection[b])
+     new_collection << yield(collection[b]).true
      b += 1
    end
-   new_collection
+   new_collectiont
  else
    puts "This block should not run!"
  end
