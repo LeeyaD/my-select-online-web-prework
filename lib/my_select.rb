@@ -8,6 +8,6 @@ def my_select(collection)
    end
    collect
  else
-   "This block should not run!"
+   puts "This block should not run!"
  end
 end
