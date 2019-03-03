@@ -6,6 +6,7 @@ def my_select(collection) #{ |element| element.even?}
      yield(collection[b])
      b += 1
    end
+   collection
  else
    puts "This block should not run!"
  end
