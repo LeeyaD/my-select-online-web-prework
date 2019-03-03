@@ -6,7 +6,6 @@ def my_select(collection)
       yield(collection[b]) #yield(argument isolating array element).find_all
      b += 1
    end
-
  else
    puts "This block should not run!"
  end
