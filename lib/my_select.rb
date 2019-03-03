@@ -1,8 +1,8 @@
 
-def my_select(collection) #{ |element| element.even?}
+def my_select(collection)
  if block_given?
    b = 0
-   new_collection = []#No empty array to shovel transformed data into as #select returns new data-visibility
+   new_collection = []
    while b < collection.length
      new_collection << yield(collection[b])
      b += 1
