@@ -1,3 +1,4 @@
+require 'pry'
 def my_select(collection) #{ |element| element.even?}
  if block_given?
    b = 0
