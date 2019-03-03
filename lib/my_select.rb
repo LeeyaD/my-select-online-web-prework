@@ -9,4 +9,5 @@ def my_select(collection)
    collect
  else
    "This block should not run!"
+ end
 end
