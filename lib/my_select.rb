@@ -1,4 +1,4 @@
-def my_select(collection)
+def my_select(collection) #{ |element| element.even?}
  if block_given?
    b = 0
     #No empty array to shovel transformed data into as #select returns new data-visibility
@@ -6,6 +6,7 @@ def my_select(collection)
       yield(collection[b]) #yield(argument isolating array element).find_all
      b += 1
    end
+   collection
  else
    puts "This block should not run!"
  end
