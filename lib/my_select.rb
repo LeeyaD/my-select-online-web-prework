@@ -3,7 +3,7 @@ def my_select(collection) #{ |element| element.even?}
    b = 0
     #No empty array to shovel transformed data into as #select returns new data-visibility
    while b < collection.length
-      yield(collection[b]) #yield(argument isolating array element).find_all
+      yield collection[b] #yield(argument isolating array element).find_all
      b += 1
    end
    collection
