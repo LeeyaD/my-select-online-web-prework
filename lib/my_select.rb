@@ -1,3 +1,4 @@
+require 'pry'
 def my_select(collection) #{ |element| element.even?}
  if block_given?
    b = 0
@@ -7,6 +8,7 @@ def my_select(collection) #{ |element| element.even?}
      b += 1
    end
    collection
+   binding.pry
  else
    puts "This block should not run!"
  end
